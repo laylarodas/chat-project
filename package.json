@@ -1,0 +1,11 @@
+{
+  "name": "project-sockets",
+  "version": "1.0.0",
+  "description": "Chat with socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Layla Rodas",
+  "license": "MIT"
+}
