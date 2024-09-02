@@ -25,6 +25,11 @@ io.on('connection', function (socket) {
     console.log('The customer with IP: ' + socket.handshake.address + 'has connected')
 
     socket.emit('messages', messages);
+
+    socket.on('add-message', function(data){
+        messages.push(data);
+        io.sockets.emit('messages', messages)
+    })
 })
 
 
